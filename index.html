@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>행운의 로또 추첨기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="lotto-card">
+    <p class="eyebrow">LOTTO 6/45</p>
+    <h1>행운의 번호를<br><span>뽑아보세요!</span></h1>
+    <p class="description">1부터 45까지, 오늘의 행운을 담은 6개의 번호</p>
+
+    <section class="machine" aria-live="polite">
+      <div id="balls" class="balls">
+        <span class="placeholder">추첨 버튼을 눌러주세요</span>
+      </div>
+      <div id="bonus-area" class="bonus-area" hidden>
+        <span class="plus">+</span>
+        <div>
+          <small>보너스</small>
+          <span id="bonus" class="ball bonus"></span>
+        </div>
+      </div>
+    </section>
+
+    <button id="draw-button" type="button">
+      <span aria-hidden="true">✦</span>
+      행운 번호 추첨하기
+    </button>
+    <p class="notice">※ 번호는 무작위로 생성되며 당첨을 보장하지 않습니다.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
