@@ -3,34 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>행운의 로또 추첨기</title>
+  <meta name="theme-color" content="#21242e">
+  <title>Lucky 6/45 — Number Station</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="lotto-card">
-    <p class="eyebrow">LOTTO 6/45</p>
-    <h1>행운의 번호를<br><span>뽑아보세요!</span></h1>
-    <p class="description">1부터 45까지, 오늘의 행운을 담은 6개의 번호</p>
+  <div class="site-shell">
+    <header class="masthead">
+      <div class="welcome"><span class="pixel-star">★</span> 행운의 번호 스테이션에 오신 것을 환영합니다!</div>
+      <div class="power"><i></i> SYSTEM ONLINE</div>
+    </header>
 
-    <section class="machine" aria-live="polite">
-      <div id="balls" class="balls">
-        <span class="placeholder">추첨 버튼을 눌러주세요</span>
-      </div>
-      <div id="bonus-area" class="bonus-area" hidden>
-        <span class="plus">+</span>
-        <div>
-          <small>보너스</small>
-          <span id="bonus" class="ball bonus"></span>
+    <nav class="main-nav" aria-label="주 메뉴">
+      <a class="logo" href="#">LUCKY</a>
+      <span>GAMES</span><span>NUMBERS</span><span>WINNERS</span><span>NEWS</span>
+      <button class="utility" type="button">CODE 6/45</button>
+    </nav>
+    <div class="sub-nav">
+      <span>HOME</span><span>HOW TO PLAY</span><span>RESULTS</span><span>HELP</span>
+      <strong>2001 EDITION</strong>
+    </div>
+
+    <main>
+      <section class="hero">
+        <div class="circuit" aria-hidden="true"></div>
+        <p class="hero-kicker">WELCOME TO THE NUMBER ZONE</p>
+        <h1>LOTTO<br><em>6/45</em></h1>
+        <p class="hero-copy">행운의 숫자 6개와 보너스 번호를 뽑아보세요!</p>
+      </section>
+
+      <section class="console">
+        <div class="section-bar"><span>▦</span> LUCKY NUMBER GENERATOR <i>READY</i></div>
+        <div class="screen">
+          <div class="screen-label">YOUR LUCKY NUMBERS</div>
+          <div class="result-row" aria-live="polite">
+            <div id="balls" class="balls"><span class="placeholder">PRESS START TO PLAY!</span></div>
+            <div id="bonus-area" class="bonus-area" hidden>
+              <span class="plus">+</span>
+              <div><small>BONUS</small><span id="bonus" class="ball bonus"></span></div>
+            </div>
+          </div>
+          <div class="scanline"></div>
         </div>
-      </div>
-    </section>
 
-    <button id="draw-button" type="button">
-      <span aria-hidden="true">✦</span>
-      행운 번호 추첨하기
-    </button>
-    <p class="notice">※ 번호는 무작위로 생성되며 당첨을 보장하지 않습니다.</p>
-  </main>
+        <div class="control-panel">
+          <div class="instructions">
+            <strong>HOW TO PLAY</strong>
+            <span>① START 버튼을 누르세요</span>
+            <span>② 행운의 번호를 확인하세요</span>
+          </div>
+          <button id="draw-button" class="start-button" type="button">
+            <span class="button-light"></span><b>START</b><small>행운 번호 추첨</small>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="rating"><b>ALL</b><span>EVERYONE<br>행운 이용가</span></div>
+      <p>© 2001–2026 LUCKY NUMBER STATION<br><span>번호는 무작위로 생성되며 당첨을 보장하지 않습니다.</span></p>
+      <div class="secure">★ SAFE &amp; FUN</div>
+    </footer>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>

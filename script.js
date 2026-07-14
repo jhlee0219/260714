@@ -24,7 +24,7 @@ const delay = (milliseconds) => new Promise(resolve => setTimeout(resolve, milli
 
 async function draw() {
   drawButton.disabled = true;
-  drawButton.textContent = "번호를 섞는 중...";
+  drawButton.innerHTML = '<span class="button-light"></span><b>LOADING...</b><small>번호를 섞는 중</small>';
   balls.replaceChildren();
   bonusArea.hidden = true;
 
@@ -41,7 +41,7 @@ async function draw() {
   bonusBall.textContent = result.bonus;
   bonusArea.hidden = false;
   drawButton.disabled = false;
-  drawButton.innerHTML = '<span aria-hidden="true">↻</span> 다시 추첨하기';
+  drawButton.innerHTML = '<span class="button-light"></span><b>REPLAY</b><small>다시 추첨하기</small>';
 }
 
 drawButton.addEventListener("click", draw);
