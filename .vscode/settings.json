@@ -1,0 +1,6 @@
+{
+  "code-runner.executorMap": {
+    "html": "open"
+  },
+  "code-runner.runInTerminal": true
+}
